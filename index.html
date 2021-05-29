@@ -6,11 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="style.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" > 
+    <link href="page.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>CodeBlocks by Alvin saini</title>
   </head>
   <body>
+      <div class="div-con">
+      <div class="heading">
+          <h2>Code Blocks For Websites</h2>
+      </div>
+      <div class="logo margin-extra">
+      <img src="logo.jpg" alt="logo">
+      </div>
+      <div class="line">
+      <p>An Opensource solution to show Code on website in better way</p>
+      </div>
+      <div class="div-con">
+        <a class="link" id="Github" href="https://github.com/codewithalvin/code_tag_for_websites">GITHUB</a>
+        <a class="link" href="#HOW">HOW TO USE</a>
+      </div>
+      <div class="dib-con" id ="HOW">
+          <p class="line bold margin-extra"> HOW TO USE IT </p>
+          <p class="line">You can use it in two ways see them below</p>
+          <p class="line b-300 margin-extra"> • Use below style and script tag in your html and enjoy it 
+          </p>
+         <code>
+&lt;link href=&quot;https://codewithalvin.github.io/code_tag_for_websites/style.css&quot; rel=&quot;stylesheet&quot; &gt;
+           </code>
+           <code>
+&lt;script src=&quot;https://codewithalvin.github.io/code_tag_for_websites/script.js&quot;&gt;&lt;/script&gt;
+           </code>
+           
+          <p class="line bold">OR</p>
+          <p class="line b-300 margin-extra" > • Copy and use the source code from <a href="#Github">Github</a> The file You are looking for is SCRIPT.JS and STYLE.css</p>
+      </div>
+      <div class="div-con">
+          <p class="line bold">Look at at example below</p>
+          <p class="line b-300 margin-extra">
+              Writting this 👇
+          </p>
+          <img class="codeexample" src="CodeExample.jpg" alt="CodeExample" />
+          <p class="line b-300 margin-extra">
+              Gives that 👇 
+              Note if you are using html inside &lt;code&gt; then do consider encoding the code first
+          </p>
       <code>
 import requests #for web fetching
 from bs4 import BeautifulSoup #for parsing
@@ -32,10 +72,11 @@ class Scrape:
 		url=self.url+username
 		return self.fetch(url)
       </code>
-      <code>
-for i in range(7):
-    print(i)
-      </code>
+ </div>
+ </div>
+ <footer>
+     <p class="line bold">Made By <a href="https://alvinsaini.herokuapp.com"> Alvin Saini </a></p>
+ </footer>
     <script src="script.js"></script>
 
   </body>
