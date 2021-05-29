@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="style.css" rel="stylesheet" >
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <code>
+import requests #for web fetching
+from bs4 import BeautifulSoup #for parsing
+
+class Scrape:
+	def __init__(self,url):
+		self.url=url
+		
+	def fetch(self,url):
+		headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"}
+		page=requests.get(url,headers=headers).content
+		soup = BeautifulSoup(page, 'html.parser')
+		return soup.prettify()
+		
+	def get_by_name(self,name):
+		pass
+	
+	def get_by_username(self,username):
+		url=self.url+username
+		return self.fetch(url)
+      </code>
+      <code>
+for i in range(7):
+    print(i)
+      </code>
+    <script src="script.js"></script>
+
+  </body>
+</html>
