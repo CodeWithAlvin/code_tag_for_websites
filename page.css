@@ -36,6 +36,16 @@ body{
 
 .logo img{
     width: 90%;
+    animation: pop 250ms;
+}
+@keyframes pop{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+    
 }
 
 .line{
