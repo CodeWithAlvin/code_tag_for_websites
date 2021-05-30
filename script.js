@@ -8,7 +8,7 @@ const manupulate=(collection)=>{
         ele.innerHTML=`<div class="container" >
             <div class="code">
            <button class="copy" onClick=copy(this) >Copy</button>
-          <pre class="pre">Abcdef</pre>
+          <pre class="pre"></pre>
       </div>
       </div>`;
       ele.querySelector(".pre").innerText=text
