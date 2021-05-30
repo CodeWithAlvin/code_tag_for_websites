@@ -5,7 +5,6 @@ code = document.getElementsByTagName('code')
 const manupulate=(collection)=>{
     Array.from(collection).map((ele)=>{
         text=ele.textContent
-        console.log(text)
         ele.innerHTML=`<div class="container" >
             <div class="code">
            <button class="copy" onClick=copy(this) >Copy</button>
