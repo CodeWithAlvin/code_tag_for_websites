@@ -19,8 +19,8 @@ const manupulate=(collection)=>{
 
 //change svg to check for some time and then reset to clipboard svg
 const copiedEffect=(element)=>{
-    element.src="/src/svg/check.svg";
-    setTimeout(()=>element.src='/src/svg/clipboard.svg',450);
+    element.src="src/svg/check.svg";
+    setTimeout(()=>element.src='src/svg/clipboard.svg',450);
 }
 
 // function called on clicking the copy button
@@ -38,10 +38,10 @@ const handleTheme=(element)=>{
     element.classList.toggle("dark_code");
     element.querySelector("#theme").classList.toggle("night")
     if (element.querySelector("#theme").classList.contains("night")){
-    element.querySelector("#theme").src="/src/svg/sun.svg"
+    element.querySelector("#theme").src="src/svg/sun.svg"
     }
     else{
-    element.querySelector("#theme").src="/src/svg/moon.svg"
+    element.querySelector("#theme").src="src/svg/moon.svg"
     }
 }
 
