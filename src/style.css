@@ -15,7 +15,7 @@
    border-radius: 5px;
    display: flex;
    flex-direction: column;
-   transition:all 500ms;
+   transition:all 250ms;
 }
 
 .pre-code{
@@ -32,7 +32,7 @@
 .controls-code{
     width:100%;
     border-radius: 5px 5px 0 0;
-    padding:5px 0px;
+    padding:7px 0px;
     overflow-x: scroll;
     display: flex;
 }
@@ -41,6 +41,7 @@
 }
 .svg{
     width: 25px;
+    height: 25px;
     margin: 0px 10px;
     transition:all 250ms;
 }

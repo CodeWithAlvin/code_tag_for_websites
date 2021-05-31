@@ -1,3 +1,11 @@
+let svg_src={
+    sun:'https://codewithalvin.github.io/code_tag_for_websites/src/svg/sun.svg',
+    moon:'https://codewithalvin.github.io/code_tag_for_websites/src/svg/moon.svg',
+    code:'https://codewithalvin.github.io/code_tag_for_websites/src/svg/code.svg',
+    check:'https://codewithalvin.github.io/code_tag_for_websites/src/svg/check.svg',
+    clipboard:'https://codewithalvin.github.io/code_tag_for_websites/src/svg/clipboard.svg'
+}
+
 //changes all tags with <code> to make them in div and pre tags
 const manupulate=(collection)=>{
     Array.from(collection).map((ele)=>{
@@ -5,9 +13,9 @@ const manupulate=(collection)=>{
         ele.innerHTML=`<div class="container-code" >
             <div class="code-code dark_code">
             <div class="controls-code dark_nav">
-                <img class="svg" src="src/svg/code.svg">
-                <img class="svg night" id="theme" onClick=theme(this) src="src/svg/sun.svg">
-                <img class="svg" id="copy" onClick=copy(this) src="src/svg/clipboard.svg">
+                <img class="svg" src="${svg_src.code}">
+                <img class="svg night" id="theme" onClick=theme(this) src="${svg_src.sun}">
+                <img class="svg" id="copy" onClick=copy(this) src="${svg_src.clipboard}">
             </div>   
           <pre class="pre-code"></pre>
       </div>
@@ -19,8 +27,8 @@ const manupulate=(collection)=>{
 
 //change svg to check for some time and then reset to clipboard svg
 const copiedEffect=(element)=>{
-    element.src="src/svg/check.svg";
-    setTimeout(()=>element.src='src/svg/clipboard.svg',450);
+    element.src=svg_src.check;
+    setTimeout(()=>element.src=svg_src.clipboard,450);
 }
 
 // function called on clicking the copy button
@@ -38,10 +46,10 @@ const handleTheme=(element)=>{
     element.classList.toggle("dark_code");
     element.querySelector("#theme").classList.toggle("night")
     if (element.querySelector("#theme").classList.contains("night")){
-    element.querySelector("#theme").src="src/svg/sun.svg"
+    element.querySelector("#theme").src=svg_src.sun
     }
     else{
-    element.querySelector("#theme").src="src/svg/moon.svg"
+    element.querySelector("#theme").src=svg_src.moon
     }
 }
 
