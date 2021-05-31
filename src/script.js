@@ -1,6 +1,3 @@
-//getting all elements with tag <code>
-code = document.getElementsByTagName('code')
-
 //changes all tags with <code> to make them in div and pre tags
 const manupulate=(collection)=>{
     Array.from(collection).map((ele)=>{
@@ -15,8 +12,6 @@ const manupulate=(collection)=>{
     })
 }
 
-//calling function
-manupulate(code)
 
 //change text to copied for some time and then reset to copy
 const copiedEffect=(element)=>{
@@ -30,5 +25,13 @@ const copy=(e)=>{
     text=text.slice(5,)
     const cb = navigator.clipboard;
     cb.writeText(text).then(() => copiedEffect(e));
+}
+
+//calling function
+//getting all elements with tag <code>
+//window.onload to prevent run js without html if js fetched in head
+window.onload=()=>{
+    code = document.getElementsByTagName('code')
+    manupulate(code)
 }
 
