@@ -49,7 +49,7 @@
           <img class="codeexample" src="CodeExample.jpg" alt="CodeExample" />
           <p class="line b-300 margin-extra">
               Gives that 👇 
-              Note if you are using html inside &lt;code&gt; then do consider encoding the code first
+              Note if you are using html inside &lt;code&gt; then do consider encoding the html first
           </p>
       <code>
 import requests #for web fetching
@@ -72,7 +72,16 @@ class Scrape:
 		url=self.url+username
 		return self.fetch(url)
       </code>
- </div>
+      </div>
+      <div class="div-con">
+      <p class="line bold margin-extra">EDIT THEME</p>
+      <p class="line b-300">
+          Overwrite the class <i>.dark_nav .dark_code .light_nav .light_code</i>
+      </p>
+      <p class="line b-300 margin-extra">
+          Note that .dark_code and .dark_nav work together and .light_nav and .light_code together.
+      </p>
+      </div>
  </div>
  <footer>
      <p class="line bold">Made By <a href="https://alvinsaini.herokuapp.com"> Alvin Saini </a></p>
