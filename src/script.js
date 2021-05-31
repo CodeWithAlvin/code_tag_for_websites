@@ -5,13 +5,13 @@ code = document.getElementsByTagName('code')
 const manupulate=(collection)=>{
     Array.from(collection).map((ele)=>{
         text=ele.textContent
-        ele.innerHTML=`<div class="container" >
-            <div class="code">
-           <button class="copy" onClick=copy(this) >Copy</button>
-          <pre class="pre"></pre>
+        ele.innerHTML=`<div class="container-code" >
+            <div class="code-code">
+           <button class="copy-code" onClick=copy(this) >Copy</button>
+          <pre class="pre-code"></pre>
       </div>
       </div>`;
-      ele.querySelector(".pre").innerText=text
+      ele.querySelector(".pre-code").innerText=text
     })
 }
 

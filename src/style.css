@@ -1,4 +1,4 @@
-.container{
+.container-code{
     width:100%;
     max-width: 98vw;
     min-width:60vw ;
@@ -10,7 +10,7 @@
     margin:10px 0px;
 }
 
-.code{
+.code-code{
    background:rgb(40,40,40);
    width:80%;
    padding-right:10px;
@@ -23,14 +23,14 @@
    position: relative;
 }
 
-.pre{
+.pre-code{
     color:#e8e8e8;
     overflow-x:scroll ;
     margin-top: 20px;
     text-align: left;
     max-width:100vw;
 }
-.copy{
+.copy-code{
     color:#e8e8e8;
     width:80px;
     position: absolute;
@@ -44,7 +44,7 @@
     transition: all 250ms ease-out;
     background: transparent;
 }
-.copy:hover{
+.copy-code:hover{
     background: rgba(254,254,254,0.7);
     color:#000;
 }
