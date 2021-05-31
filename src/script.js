@@ -17,7 +17,7 @@ const manupulate=(collection)=>{
 }
 
 
-//change text to copied for some time and then reset to copy
+//change svg to check for some time and then reset to clipboard svg
 const copiedEffect=(element)=>{
     element.src="/src/svg/check.svg";
     setTimeout(()=>element.src='/src/svg/clipboard.svg',450);
@@ -30,6 +30,7 @@ const copy=(e)=>{
     cb.writeText(text).then(() => copiedEffect(e));
 }
 
+//handle class adding and removing and src changing
 const handleTheme=(element)=>{
     element.querySelector(".controls-code").classList.toggle("light_nav");
     element.classList.toggle("light_code");
@@ -44,6 +45,7 @@ const handleTheme=(element)=>{
     }
 }
 
+//function called when clicked on theme icon
 const theme=(e)=>{
     elements=document.getElementsByClassName("code-code");
     Array.from(elements).map((element)=>handleTheme(element));
