@@ -1,6 +1,24 @@
-# code_tag_for_websites
-For represening code in websites
 
-## consider Starring  the repo if you find it helpful
+# CodeBlocks
+A way to show codr on website or blog
 
-### see how its work on ==> https://codewithalvin.github.io/code_tag_for_websites
+
+  
+![Logo](https://codewithalvin.github.io/code_tag_for_websites/logo.jpg)
+
+    
+## Authors
+
+- [@codewithalvin](https://www.github.com/codewithalvin)
+
+  
+## Documentation
+
+[Documentation](https://codewithalvin.github.io/code_tag_for_websites/)
+
+  
+## Contributing
+
+`Contributions` are always welcomed.
+
+  
