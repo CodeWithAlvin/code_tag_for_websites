@@ -1,6 +1,6 @@
 
 # CodeBlocks
-A way to show codr on website or blog
+A way to show code on website or blog
 
 
   
